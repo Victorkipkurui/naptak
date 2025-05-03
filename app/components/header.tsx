@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Header: React.FC = () => {
+export default function Header() {
     return (
         <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,5 +27,3 @@ const Header: React.FC = () => {
         </header>
     );
 };
-
-export default Header;
