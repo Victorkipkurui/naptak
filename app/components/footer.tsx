@@ -8,9 +8,11 @@ export default function Footer() {
 
         {/* Nav Links */}
         <nav className="flex gap-6">
-          <Link href="#services" className="hover:text-white">Services</Link>
-          <Link href="#technologies" className="hover:text-white">Technologies</Link>
-          <Link href="#contact" className="hover:text-white">Contact</Link>
+          <Link href="#services" className="hover:text-white">Home</Link>
+          <Link href="#technologies" className="hover:text-white">About</Link>
+          <Link href="#contact" className="hover:text-white">Services</Link>
+          <Link href="#technologies" className="hover:text-white">Our Technologies</Link>
+          <Link href="#contact" className="hover:text-white">Contact Us</Link>
         </nav>
 
         {/* Social Icons */}
@@ -22,7 +24,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="text-center text-sm mt-4">&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+      <p className="text-center text-sm mt-4">&copy; {new Date().getFullYear()} NAPTAK AFRICA CONSULTANTS. All rights reserved.</p>
     </footer>
   );
 }

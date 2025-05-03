@@ -18,8 +18,14 @@ export default function Header() {
                         <Link href="/about">
                             <div className="text-gray-600 hover:text-gray-900">About</div>
                         </Link>
+                        <Link href="/about">
+                            <div className="text-gray-600 hover:text-gray-900">Services</div>
+                        </Link>
+                        <Link href="/about">
+                            <div className="text-gray-600 hover:text-gray-900">Our Technologies</div>
+                        </Link>
                         <Link href="/contact">
-                            <div className="text-gray-600 hover:text-gray-900">Contact</div>
+                            <div className="text-gray-600 hover:text-gray-900">Contact Us</div>
                         </Link>
                     </nav>
                 </div>
