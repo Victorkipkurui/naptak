@@ -6,7 +6,7 @@ export default function Home() {
       {/* Section 1 */}
       <section
         className="w-full h-screen bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: "url(/section1.png)" }}
+        style={{ backgroundImage: "url(/image1.jpg)" }}
       >
         <div className="text-center p-4 bg-black bg-opacity-50 rounded-lg max-w-xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Our Site</h1>
@@ -17,7 +17,7 @@ export default function Home() {
       {/* Section 2 */}
       <section
         className="w-full h-screen bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: "url(/section2.png)" }}
+        style={{ backgroundImage: "url(/image4.jpg)" }}
       >
         <div className="text-center p-4 bg-black bg-opacity-50 rounded-lg max-w-xl">
           <h2 className="text-3xl md:text-5xl font-semibold mb-4">Our Services</h2>
@@ -28,7 +28,7 @@ export default function Home() {
       {/* Section 3 */}
       <section
         className="w-full h-screen bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: "url(/section3.png)" }}
+        style={{ backgroundImage: "url(/image3.jpg)" }}
       >
         <div className="text-center p-4 bg-black bg-opacity-50 rounded-lg max-w-xl">
           <h2 className="text-3xl md:text-5xl font-semibold mb-4">Contact Us</h2>
