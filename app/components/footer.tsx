@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
@@ -7,17 +8,17 @@ export default function Footer() {
 
         {/* Nav Links */}
         <nav className="flex gap-6">
-          <a href="#services" className="hover:text-white">Services</a>
-          <a href="#technologies" className="hover:text-white">Technologies</a>
-          <a href="#contact" className="hover:text-white">Contact</a>
+          <Link href="#services" className="hover:text-white">Services</Link>
+          <Link href="#technologies" className="hover:text-white">Technologies</Link>
+          <Link href="#contact" className="hover:text-white">Contact</Link>
         </nav>
 
         {/* Social Icons */}
         <div className="flex gap-4 text-2xl">
-          <a href="#" className="hover:text-white"><FaFacebook /></a>
-          <a href="#" className="hover:text-white"><FaTwitter /></a>
-          <a href="#" className="hover:text-white"><FaInstagram /></a>
-          <a href="#" className="hover:text-white"><FaLinkedin /></a>
+          <Link href="#" className="hover:text-white"><FaFacebook /></Link>
+          <Link href="#" className="hover:text-white"><FaTwitter /></Link>
+          <Link href="#" className="hover:text-white"><FaInstagram /></Link>
+          <Link href="#" className="hover:text-white"><FaLinkedin /></Link>
         </div>
       </div>
 

@@ -8,18 +8,18 @@ export default function Header() {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
                         <Link href="/">
-                            <a className="text-xl font-bold text-gray-800">MyApp</a>
+                            <div className="text-xl font-bold text-gray-800">MyApp</div>
                         </Link>
                     </div>
                     <nav className="hidden md:flex space-x-4">
                         <Link href="/">
-                            <a className="text-gray-600 hover:text-gray-900">Home</a>
+                            <div className="text-gray-600 hover:text-gray-900">Home</div>
                         </Link>
                         <Link href="/about">
-                            <a className="text-gray-600 hover:text-gray-900">About</a>
+                            <div className="text-gray-600 hover:text-gray-900">About</div>
                         </Link>
                         <Link href="/contact">
-                            <a className="text-gray-600 hover:text-gray-900">Contact</a>
+                            <div className="text-gray-600 hover:text-gray-900">Contact</div>
                         </Link>
                     </nav>
                 </div>
