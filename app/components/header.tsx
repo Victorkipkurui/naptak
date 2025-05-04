@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
     return (
@@ -8,7 +9,13 @@ export default function Header() {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
                         <Link href="/">
-                            <div className="text-xl font-bold text-gray-800">MyApp</div>
+                        <Image
+                            src="/logo.jpeg"
+                            alt="Logo"
+                            width={100}          
+                            height={100}        
+                            className="h-10 w-auto" 
+                            />
                         </Link>
                     </div>
                     <nav className="hidden md:flex space-x-4">
