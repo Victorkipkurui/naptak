@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="text-center text-sm mt-4">&copy; {new Date().getFullYear()} NAPTAK AFRICA CONSULTANTS. All rights reserved.</p>
+      <div className="text-center text-sm mt-4">&copy; {new Date().getFullYear()} NAPTAK AFRICA CONSULTANTS. All rights reserved.</div>
     </footer>
   );
 }

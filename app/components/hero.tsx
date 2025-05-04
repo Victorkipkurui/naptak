@@ -25,9 +25,9 @@ export default function Hero() {
 
         <div className="w-24 h-1 bg-blue-500 mb-4"></div>
 
-        <p className="text-lg md:text-2xl max-w-xl">
+        <div className="text-lg md:text-2xl max-w-xl">
           Unlock Your Financial Potential
-        </p>
+        </div>
       </div>
     </section>
   );

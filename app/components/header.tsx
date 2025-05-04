@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -15,8 +14,6 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-
-          {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="#home" onClick={closeMenu}>
               <Image
@@ -35,7 +32,7 @@ export default function Header() {
               const hrefs = ['#home', '#about', '#services', '#technologies', '#contact'];
               return (
                 <Link key={idx} href={hrefs[idx]}>
-                  <div className="text-gray-600 hover:text-gray-900 cursor-pointer">{label}</div>
+                  <div className="text-gray-800 hover:text-gray-900 cursor-pointer">{label}</div>
                 </Link>
               );
             })}
