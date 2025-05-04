@@ -3,7 +3,7 @@ import bgImage from "@/public/image2.jpeg";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen text-white">
+    <section id="home" className="relative w-full h-screen text-white">
 
       {/* Background Image */}
       <Image

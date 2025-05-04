@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <section className="relative w-full h-screen text-white">
+    <section id="about" className="relative w-full h-screen text-white">
 
       {/* Overlay (optional dark tint for readability) */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>

@@ -24,7 +24,7 @@ export default function Technologies() {
       },
     ];
     return (
-    <section id="services" className="w-full py-16 bg-gray-100">
+    <section id="technologies" className="w-full py-16 bg-gray-100">
       <div className="max-w-5xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold mb-12">Our Technologies</h2>
         <ul className="grid gap-8 md:grid-cols-4 text-lg">

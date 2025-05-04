@@ -32,18 +32,37 @@ export default function Contact() {
             </button>
           </form>
   
-          {/* Map */}
-          <div className="mt-8">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18..."
-              width="100%"
-              height="300"
-              className="rounded-xl border"
-              loading="lazy"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
+          <div className="w-full py-16 bg-gray-100">
+  <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+
+    {/* Contact Info - Left */}
+    <div className="space-y-6">
+      <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
+
+      <div className="text-lg text-gray-700 space-y-3">
+        <p><strong>Call:</strong> +254 700 000 000</p>
+        <p><strong>Email:</strong> info@yourcompany.com</p>
+        <p><strong>Hours:</strong> Mon–Fri, 8 AM – 5 PM</p>
+        <p><strong>Location:</strong> Ngong Rd, Nairobi, Kenya</p>
+      </div>
+    </div>
+
+    {/* Map - Right */}
+    <div className="w-full h-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.93970333946!2d36.672343!3d-1.335255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f034cdccc3f45%3A0xbde78b03444307f!2sNgong%20Rd%2C%20Kenya!5e0!3m2!1sen!2sus!4v1746355064817!5m2!1sen!2sus"
+        width="100%"
+        height="450"
+        className="rounded-xl border w-full h-full min-h-[300px]"
+        loading="lazy"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+  </div>
+</div>
+
+      </div>
       </section>
     );
   }
