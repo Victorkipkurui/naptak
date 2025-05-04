@@ -31,9 +31,9 @@ export default function Services() {
               <Image
                 src={service.image}
                 alt={service.title}
-                width={100}
-                height={100}
-                className="rounded-full mb-4 object-cover"
+                width={60}
+                height={60}
+                className="w-24 h-24 mb-4 rounded-full overflow-hidden transition-transform duration-300 hover:scale-110"
               />
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-600 text-base">{service.description}</p>
