@@ -13,10 +13,6 @@ export default function Hero() {
         className="object-cover"
         priority
       />
-
-      {/* Optional dark overlay for readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
