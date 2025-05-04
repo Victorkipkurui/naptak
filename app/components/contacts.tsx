@@ -6,9 +6,26 @@ export default function Contact() {
   
           {/* Contact Form */}
           <form className="grid gap-4 bg-white p-6 rounded-xl shadow-md">
-            <input type="text" placeholder="Name" className="border p-3 rounded-md w-full" required />
-            <input type="tel" placeholder="Phone" className="border p-3 rounded-md w-full" required />
-            <input type="email" placeholder="Email" className="border p-3 rounded-md w-full" required />
+          <div className="flex flex-wrap gap-4">
+              <input
+                type="text"
+                placeholder="Name"
+                className="border p-3 rounded-md flex-1 min-w-[150px]"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Phone"
+                className="border p-3 rounded-md flex-1 min-w-[150px]"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="border p-3 rounded-md flex-1 min-w-[150px]"
+                required
+              />
+            </div>
             <textarea placeholder="Message" rows={5} className="border p-3 rounded-md w-full" required />
             <button type="submit" className="bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition">
               Send Message
