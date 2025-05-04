@@ -53,9 +53,9 @@ export default function Header() {
               <Image
                 src="/logo.jpeg"
                 alt="Logo"
-                width={100}
-                height={100}
-                className="h-10 w-auto"
+                width={160}
+                height={150}
+                className="h-16 w-auto"
               />
             </Link>
           </div>
@@ -64,7 +64,7 @@ export default function Header() {
           <nav className="hidden md:flex space-x-6">
             {sections.map((section) => (
               <Link key={section.id} href={`#${section.id}`} onClick={closeMenu}>
-                <div className={`cursor-pointer ${activeSection === section.id ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-600 hover:text-gray-900'}`}>
+                <div className={`cursor-pointer ${activeSection === section.id ? 'text-orange-600 border-b-2 border-orange-600 pb-1' : 'text-gray-800 hover:text-gray-900'}`}>
                   {section.label}
                 </div>
               </Link>
@@ -75,7 +75,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-600 hover:text-gray-900 focus:outline-none"
+              className="text-gray-800 hover:text-gray-900 focus:outline-none"
             >
               {isMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
             </button>
@@ -90,7 +90,7 @@ export default function Header() {
           <div className="flex flex-col items-start space-y-4 px-6 py-4">
             {sections.map((section) => (
               <Link key={section.id} href={`#${section.id}`} onClick={closeMenu}>
-                <div className={`text-lg cursor-pointer ${activeSection === section.id ? 'text-blue-600 underline' : 'text-gray-600 hover:text-gray-900'}`}>
+                <div className={`text-lg cursor-pointer ${activeSection === section.id ? 'text-orange-600 underline' : 'text-gray-800 hover:text-gray-900'}`}>
                   {section.label}
                 </div>
               </Link>

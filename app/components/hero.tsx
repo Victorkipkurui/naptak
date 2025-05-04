@@ -19,7 +19,7 @@ export default function Hero() {
           Empower Your Business
         </h1>
 
-        <div className="w-24 h-1 bg-blue-500 mb-4"></div>
+        <div className="w-24 h-1 bg-orange-500 mb-4"></div>
 
         <div className="text-lg md:text-2xl max-w-xl">
           Unlock Your Financial Potential
