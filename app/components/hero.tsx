@@ -1,5 +1,4 @@
 import Image from "next/image";
-import bgImage from "@/public/image2.jpeg";
 
 export default function Hero() {
   return (
@@ -7,7 +6,7 @@ export default function Hero() {
 
       {/* Background Image */}
       <Image
-        src={bgImage}
+        src="/image2.jpeg"
         alt="Hero background"
         fill
         className="object-cover"

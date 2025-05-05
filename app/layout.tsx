@@ -4,8 +4,8 @@ import "./globals.css";
 import BackToTop from "./components/backTotop";
 
 const inter = Inter({
-  variable: "--font-inter", // Define a CSS variable for Inter
-  subsets: ["latin"],       // Specify the character subsets you want (e.g., latin)
+  variable: "--font-inter",
+  subsets: ["latin"],      
 });
 
 export const metadata: Metadata = {
