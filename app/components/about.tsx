@@ -1,12 +1,11 @@
 import Image from "next/image";
-import bgImage from "@/public/image4.jpg"
 
 export default function AboutPage() {
   return (
   <div>
       <section id="about" className="relative w-full h-screen text-white">
         <Image
-          src={bgImage}
+          src="/image4.jpg"
           alt="Hero background"
           fill
           className="object-cover"
