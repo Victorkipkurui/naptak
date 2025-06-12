@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
@@ -12,7 +13,7 @@ export default function Footer() {
           <Link href="#about" className="hover:text-white">About</Link>
           <Link href="#services" className="hover:text-white">Services</Link>
           <Link href="#technologies" className="hover:text-white">Our Technologies</Link>
-          <Link href="#contact" className="hover:text-white">Contact Us</Link>
+          <Link href="/contact" className="hover:text-white">Contact Us</Link>
         </nav>
 
         {/* Social Icons */}
