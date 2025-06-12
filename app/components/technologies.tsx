@@ -5,7 +5,7 @@ export default function Technologies() {
       {
         title: "QuickBooks Online Software",
         description: "Streamline your accounting processes with QuickBooks Online Software. This cloud-based solution offers a wide range of features to help you manage your business finances efficiently. From invoicing and expense tracking to bank reconciliation and tax preparation, QuickBooks Online Software simplifies your accounting tasks. With its user-friendly interface and real-time access to your financial data, you can make informed decisions and stay in control of your business finances with ease.",
-        image: "/image1.jpg",
+        image: "/image3.jpg",
       },
       {
         title: "Zoho Books",

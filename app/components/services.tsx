@@ -5,7 +5,7 @@ export default function Services() {
       {
         title: "Streamlined Bookkeeping",
         description: "Efficiently manage your financial records and transactions with our automated bookkeeping service, saving you time and reducing errors.",
-        image: "/image1.jpg",
+        image: "/image3.jpg",
       },
       {
         title: "Advanced Financial Reporting",
