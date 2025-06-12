@@ -57,7 +57,7 @@ export default function Contact() {
   return (
     <section id="contact" className="w-full py-16 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Contact Us</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-800">Contact Us</h2>
 
         {/* Toast Notification */}
         {showToast && (
@@ -79,34 +79,34 @@ export default function Contact() {
         {/* Contact Info + Map Section */}
         <div className="grid md:grid-cols-2 gap-8 items-stretch">
           {/* Contact Info - Left */}
-          <div className="space-y-6 h-full flex flex-col justify-center">
-            <div className="text-lg text-gray-700 space-y-4">
+          <div className="space-y-6 h-full flex flex-col justify-center bg-white p-6 rounded-xl shadow-md">
+            <div className="text-base md:text-lg text-gray-700 space-y-4">
               <p className="flex items-center space-x-3">
                 <FiPhone className="text-2xl text-orange-600" />
-                <span>+254 713 732 619</span>
+                <span className="text-gray-800">+254 713 732 619</span>
               </p>
 
               <p className="flex items-center space-x-3">
                 <FiMail className="text-2xl text-orange-600" />
-                <a href="mailto:naptaktechnology@gmail.com" className="hover:underline break-words">
+                <a href="mailto:naptaktechnology@gmail.com" className="text-gray-800 hover:text-orange-600 hover:underline break-words">
                   naptaktechnology@gmail.com
                 </a>
               </p>
 
               <p className="flex items-center space-x-3">
                 <FiClock className="text-2xl text-orange-600" />
-                <span>Mon–Fri, 8 AM – 5 PM</span>
+                <span className="text-gray-800">Mon–Fri, 8 AM – 5 PM</span>
               </p>
 
               <p className="flex items-center space-x-3">
                 <FiMapPin className="text-2xl text-orange-600" />
-                <span>Ngong Rd, Nairobi, Kenya</span>
+                <span className="text-gray-800">Ngong Rd, Nairobi, Kenya</span>
               </p>
             </div>
           </div>
 
           {/* Map - Right */}
-          <div className="h-full">
+          <div className="h-[300px] md:h-full">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.93970333946!2d36.672343!3d-1.335255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f034cdccc3f45%3A0xbde78b03444307f!2sNgong%20Rd%2C%20Kenya!5e0!3m2!1sen!2sus!4v1746355064817!5m2!1sen!2sus"
               className="rounded-xl border w-full h-full"
@@ -117,13 +117,13 @@ export default function Contact() {
         </div>
 
         {/* Contact Form */}
-        <div className="mt-12">
-          <form onSubmit={handleSubmit} className="grid gap-4 bg-white p-6 rounded-xl shadow-md">
-            <div className="flex flex-wrap gap-4">
+        <div className="mt-8 md:mt-12">
+          <form onSubmit={handleSubmit} className="grid gap-4 bg-white p-4 md:p-6 rounded-xl shadow-md">
+            <div className="grid grid-cols-1 md:flex md:flex-wrap gap-4">
               <input
                 type="text"
                 placeholder="Name"
-                className="border p-3 rounded-md flex-1 min-w-[150px] disabled:opacity-50"
+                className="border border-gray-300 p-3 rounded-md w-full md:flex-1 md:min-w-[150px] disabled:opacity-50 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 id="name"
                 name="name"
                 value={formData.name}
@@ -134,7 +134,7 @@ export default function Contact() {
               <input
                 type="tel"
                 placeholder="Phone"
-                className="border p-3 rounded-md flex-1 min-w-[150px] disabled:opacity-50"
+                className="border border-gray-300 p-3 rounded-md w-full md:flex-1 md:min-w-[150px] disabled:opacity-50 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 id="phone"
                 name="phone"
                 value={formData.phone}
@@ -149,7 +149,7 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="border p-3 rounded-md flex-1 min-w-[150px] disabled:opacity-50"
+                className="border border-gray-300 p-3 rounded-md w-full md:flex-1 md:min-w-[150px] disabled:opacity-50 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 required
                 disabled={status === "loading"}
               />
@@ -161,14 +161,14 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               rows={4} 
-              className="border p-3 rounded-md w-full disabled:opacity-50" 
+              className="border border-gray-300 p-3 rounded-md w-full disabled:opacity-50 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent" 
               required 
               disabled={status === "loading"}
             />
             <button 
               type="submit" 
               disabled={status === "loading"}
-              className="bg-orange-500 text-white py-3 rounded-md hover:bg-orange-700 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="bg-orange-500 text-white py-3 rounded-md hover:bg-orange-600 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 font-medium text-base"
             >
               {status === "loading" ? (
                 <>
