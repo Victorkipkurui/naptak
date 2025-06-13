@@ -14,7 +14,7 @@ export default function Footer() {
             <Link href="#about" className="hover:text-white text-sm md:text-base">About</Link>
             <Link href="#services" className="hover:text-white text-sm md:text-base">Services</Link>
             <Link href="#technologies" className="hover:text-white text-sm md:text-base">Our Technologies</Link>
-            <Link href="/contact" className="hover:text-white text-sm md:text-base">Contact Us</Link>
+            <Link href="#contact" className="hover:text-white text-sm md:text-base">Contact Us</Link>
           </nav>
 
           {/* Social Icons */}
